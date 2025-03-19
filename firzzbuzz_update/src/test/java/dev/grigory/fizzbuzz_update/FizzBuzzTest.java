@@ -7,6 +7,7 @@ public class FizzBuzzTest {
 
     @Test
     void testBasicFizzBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
         Assertions.assertEquals("1", fizzBuzz.evaluate(1));
         Assertions.assertEquals("2", fizzBuzz.evaluate(2));
         Assertions.assertEquals("Fizz", fizzBuzz.evaluate(3));
@@ -16,6 +17,7 @@ public class FizzBuzzTest {
 
     @Test
     void testFizzBuzzWithContainingDigits() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
         Assertions.assertEquals("Fizz", fizzBuzz.evaluate(13));
         Assertions.assertEquals("Buzz", fizzBuzz.evaluate(52));
         Assertions.assertEquals("FizzBuzz", fizzBuzz.evaluate(35));
@@ -23,6 +25,7 @@ public class FizzBuzzTest {
 
     @Test
     void testFizzBuzzListGeneration () {
+        FizzBuzz fizzBuzz = new FizzBuzz();
         List<String> result = fizzBuzz.generate(1, 20);
         Assertions.assertEquals(20, result.size());
         Assertions.assertEquals("1", result.get(0));
