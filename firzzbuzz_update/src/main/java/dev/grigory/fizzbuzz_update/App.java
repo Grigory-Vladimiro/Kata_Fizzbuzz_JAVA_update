@@ -1,17 +1,10 @@
 package dev.grigory.fizzbuzz_update;
 
-/**
- * Hello world!
- */
 public final class App {
-    private App() {
-    }
-
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(fizzBuzz.evaluate(i));
+        }
     }
 }
