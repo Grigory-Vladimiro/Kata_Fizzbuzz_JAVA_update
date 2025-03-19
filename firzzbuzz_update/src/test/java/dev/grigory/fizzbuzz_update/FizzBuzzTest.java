@@ -13,4 +13,12 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Buzz", fizzBuzz.evaluate(5));
         Assertions.assertEquals("FizzBuzz", fizzBuzz.evaluate(15));
 }
+
+    @Test
+    void testFizzBuzzWithContainingDigits() {
+        Assertions.assertEquals("Fizz", fizzBuzz.evaluate(13));
+        Assertions.assertEquals("Buzz", fizzBuzz.evaluate(52));
+        Assertions.assertEquals("FizzBuzz", fizzBuzz.evaluate(35));
+    }
+
 }
