@@ -1,6 +1,7 @@
 package dev.grigory.fizzbuzz_update;
 
 import java.util.List;
+import java.util.ArrayList;
 public class FizzBuzz {
 
         public String evaluate(int number) {
@@ -13,6 +14,10 @@ public class FizzBuzz {
         }
 
         public List<String> generate(int start, int end) {
-            return List.of();
+            List<String> result = new ArrayList<>();
+            for (int i = start; i <= end; i++) {
+                result.add(evaluate(i));
+            }
+            return result;
         }
 }
